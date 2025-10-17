@@ -1,0 +1,205 @@
+<!--
+  Plantilla: Portafolio + sección de donaciones
+  - Archivo: index.html
+  - Cómo personalizar: buscar "REPLACE_ME" y cambiar por tus datos (nombre, links a GitHub, Gumroad, Ko-fi, PayPal, demos).
+  - Cómo desplegar rápido en GitHub Pages:
+    1. Crea un repo nuevo (ej: tu-username.github.io).
+    2. Añade este index.html en la raíz y haz push.
+    3. En Settings > Pages selecciona la rama main y la carpeta / (root).
+    4. Espera unos minutos y listo: https://tu-username.github.io
+  - Si quieres que lo adapte con tus links y texto, pega aquí tus URLs y nombres y lo personalizo.
+--><!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>REPLACE_ME — Portafolio & Donaciones</title>
+  <meta name="description" content="Portafolio de REPLACE_ME — proyectos, CV y forma de apoyar mi trabajo" />
+  <style>
+    :root{--max:980px;--accent:#0b78d1}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; padding:24px; background:#f6f8fb; color:#111}
+    .container{max-width:var(--max); margin:0 auto}
+    header{display:flex; gap:16px; align-items:center; margin-bottom:22px}
+    .avatar{width:84px;height:84px;border-radius:12px;object-fit:cover;border:2px solid rgba(0,0,0,0.06)}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 0;color:#444}
+    nav{margin-top:8px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:800px){.grid{grid-template-columns:2fr 1fr}}.card{background:white;padding:14px;border-radius:12px;box-shadow:0 6px 14px rgba(23,31,80,0.04);border:1px solid rgba(15,23,42,0.03)}
+.project{display:flex;gap:12px;align-items:flex-start}
+.project img{width:96px;height:64px;border-radius:8px;object-fit:cover}
+.project h3{margin:0;font-size:16px}
+.btn{display:inline-block;padding:8px 12px;border-radius:10px;text-decoration:none;border:1px solid rgba(0,0,0,0.08);font-weight:600}
+.btn-primary{background:var(--accent);color:white;border:none}
+.small{font-size:13px;color:#666}
+
+.donations{display:flex;flex-direction:column;gap:8px}
+.don-option{display:flex;align-items:center;justify-content:space-between;padding:10px;border-radius:10px;border:1px dashed rgba(0,0,0,0.06)}
+.don-left{display:flex;gap:12px;align-items:center}
+.don-left img{width:44px;height:44px;border-radius:8px}
+
+.copy{background:#f1f5f9;padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.03)}
+footer{margin-top:18px;color:#666;font-size:13px;text-align:center}
+
+.notice{background:#fff3cd;border:1px solid #ffe8a1;padding:10px;border-radius:8px;color:#5a3b00}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="https://via.placeholder.com/160" alt="avatar" />
+      <div>
+        <h1>REPLACE_ME — Desarrollador</h1>
+        <p class="lead">Sistemas operativos · POS · P2P · IA — <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a></p>
+        <nav class="small">
+          <a href="#proyectos">Proyectos</a> • <a href="#donar">Donar</a> • <a href="#cv">CV</a>
+        </nav>
+      </div>
+    </header>
+
+<main class="grid">
+
+
+
+<section class="card">
+    <h2>Proyectos destacados</h2>
+
+    <div class="project" style="margin-top:10px;">
+      <img src="https://via.placeholder.com/320x200" alt="screenshot"/>
+      <div>
+        <h3>Proyecto 1 — Nombre</h3>
+        <p class="small">Breve: qué hace y a quién ayuda. <br> <a href="https://github.com/REPLACE_USER/proyecto1" target="_blank">Código</a> · <a href="https://REPLACE_USER.github.io/proyecto1" target="_blank">Demo</a></p>
+        <div style="margin-top:10px">
+          <a class="btn btn-primary" href="#donar">Apoyar este proyecto</a>
+          <a class="btn" href="https://github.com/REPLACE_USER/proyecto1" target="_blank">Ver repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repite / copia este bloque para 2 proyectos más -->
+    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.06)" />
+
+    <div class="project">
+      <img src="https://via.placeholder.com/320x200" alt="screenshot"/>
+      <div>
+        <h3>Proyecto 2 — Nombre</h3>
+        <p class="small">Breve descripción. <a href="#">Demo</a> · <a href="#">Repo</a></p>
+      </div>
+    </div>
+
+    <div style="margin-top:14px">
+      <a class="btn btn-primary" href="#donar">Apoyar mi trabajo</a>
+      <a class="btn" href="#cv">Descargar CV</a>
+    </div>
+  </section>
+
+  <aside>
+    <div class="card">
+      <h3>Sobre mí</h3>
+      <p class="small">Soy REPLACE_ME, trabajo en sistemas operativos, puntos de venta y redes p2p. Estoy creando herramientas y comparto el código abiertamente. Si quieres apoyarme, aquí están las formas más directas.</p>
+
+      <div style="margin-top:10px">
+        <h4 id="donar">Donaciones</h4>
+        <p class="small">Si puedes, cualquier apoyo es bienvenido. Si no puedes ayudar económicamente, compartir este portafolio o dar feedback también ayuda mucho.</p>
+
+        <div class="donations">
+          <div class="don-option">
+            <div class="don-left">
+              <img src="https://via.placeholder.com/88x88?text=Ko-fi" alt="Ko-fi"/>
+              <div>
+                <strong>Ko-fi</strong>
+                <div class="small">Apóyame con una taza virtual</div>
+              </div>
+            </div>
+            <div>
+              <a class="btn" href="https://ko-fi.com/REPLACE_KOFI" target="_blank">Ir a Ko-fi</a>
+            </div>
+          </div>
+
+          <div class="don-option">
+            <div class="don-left">
+              <img src="https://via.placeholder.com/88x88?text=Gumroad" alt="Gumroad"/>
+              <div>
+                <strong>Gumroad</strong>
+                <div class="small">Compra uno de mis microproductos</div>
+              </div>
+            </div>
+            <div>
+              <a class="btn" href="https://gumroad.com/REPLACE_GUMROAD" target="_blank">Ver productos</a>
+            </div>
+          </div>
+
+          <div class="don-option">
+            <div class="don-left">
+              <img src="https://via.placeholder.com/88x88?text=PayPal" alt="PayPal"/>
+              <div>
+                <strong>PayPal</strong>
+                <div class="small">Envíos rápidos (usa tu PayPal)</div>
+              </div>
+            </div>
+            <div style="min-width:140px;text-align:right">
+              <div class="copy" id="ppaddress">https://www.paypal.com/donate?hosted_button_id=REPLACE</div>
+              <div style="margin-top:8px">
+                <button class="btn" onclick="copyText('#ppaddress')">Copiar link</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="don-option">
+            <div class="don-left">
+              <img src="https://via.placeholder.com/88x88?text=Transfer" alt="Transfer"/>
+              <div>
+                <strong>Transferencia / Efectivo</strong>
+                <div class="small">Si prefieres otra forma, copia los datos (ej: OXXO/Mercado Pago) y me contactas</div>
+              </div>
+            </div>
+            <div style="min-width:140px;text-align:right">
+              <div class="copy" id="bank">CLABE / OXXO / Instrucciones aquí</div>
+              <div style="margin-top:8px"><button class="btn" onclick="copyText('#bank')">Copiar</button></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:10px" class="small">
+          <strong>Gracias</strong> por tu tiempo y por apoyar el trabajo independiente. Si quieres recibo o acceso VIP, escríbeme a <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a>.
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h4 id="cv">CV rápido</h4>
+      <p class="small">Descarga mi CV y contacto: <a href="/cv.pdf" target="_blank">cv.pdf</a></p>
+    </div>
+
+  </aside>
+</main>
+
+<section style="margin-top:14px">
+  <div class="card notice">
+    <strong>Nota rápida:</strong> Si perdiste archivos por un cambio en Firebase o tu SDK, revisa primero si tu repo aún existe en GitHub (https://github.com/REPLACE_USER). Si el "home" desapareció, puede que sólo se haya movido el index o cambiado el hosting. Si quieres, te doy comandos para recuperar historia de Git o para reinstalar Hosting con `firebase init hosting`.
+  </div>
+</section>
+
+<footer>
+  <div class="small">Hecho con ❤️ — Si quieres, dime tus links (GitHub, Ko-fi, Gumroad, PayPal) y los pongo en la plantilla.</div>
+</footer>
+
+  </div>  <script>
+    function copyText(selector) {
+      const el = document.querySelector(selector);
+      if (!el) return;
+      const text = el.innerText || el.value || el.href;
+      navigator.clipboard?.writeText(text).then(()=>{
+        alert('Copiado al portapapeles: ' + text);
+      }).catch(()=>{
+        prompt('Copia esto manualmente:', text);
+      });
+    }
+  </script></body>
+</html>
